@@ -1,0 +1,745 @@
+/*
+ * @Author: Liang Liang
+ * @Date: 2018-12-24 14:00:00
+ * @LastEditors: Liang Liang
+ * @LastEditTime: 2019-07-24 16:52:22
+ * @Description: 
+ */
+/*
+ * @Author: Liang Liang
+ * @Date: 2018-12-11 16:54:34
+ * @LastEditors: Liang Liang
+ * @LastEditTime: 2019-07-24 18:21:27
+ * @Description: 
+ */
+/*fade*/
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.28s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+/*fade-transform*/
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.5s;
+}
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+/*breadcrumb transition*/
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all 0.5s;
+}
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+.breadcrumb-move {
+  transition: all 0.5s;
+}
+.breadcrumb-leave-active {
+  position: absolute;
+}
+.views-main-el-header {
+  background-color: #42b983;
+  width: 100vw;
+  padding: 0 20px;
+  overflow: hidden;
+  color: #fff;
+}
+.views-main-el-header h1 {
+  float: left;
+  font-weight: bold;
+  font-size: 1.2vw;
+  line-height: 60px;
+}
+.views-main-el-header-el-dropdown {
+  float: right;
+  padding-top: 23px;
+  color: #fff;
+  cursor: pointer;
+}
+h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+a:hover {
+  color: #7e7e7e;
+  transition: all 1s;
+}
+.el-main {
+  padding: 0 1vw;
+  line-height: 150%;
+  font-size: 0.83333333vw;
+}
+.views-main-el-aside-navbar {
+  width: 10.41666667vw;
+  background-color: #5ba081;
+  min-height: calc(40%);
+  min-height: -ms-calc(40%);
+  overflow: hidden;
+}
+.views-main-el-aside-navbar .el-scrollbar__wrap {
+  overflow-x: hidden;
+}
+.views-main-el-aside-navbar .navbar {
+  background: transparent;
+  padding: 10px 0 200px;
+}
+.views-main-el-aside-navbar .navbar .el-menu {
+  background-color: #42b983;
+}
+.views-main-el-aside-navbar .navbar .el-menu .el-menu-item-group__title {
+  padding: 0;
+}
+.views-main-el-aside-navbar .navbar .el-menu .el-menu-item {
+  vertical-align: middle;
+}
+.views-main-el-aside-navbar .navbar li a {
+  color: #fff;
+}
+.views-main-el-aside-navbar .navbar li a.router-link-exact-active,
+.views-main-el-aside-navbar .navbar li a:hover {
+  background-color: #53c28f;
+}
+.views-main-el-aside-navbar .navbar .el-submenu__title:hover {
+  background-color: #8bd6b4;
+}
+.views-main-el-aside-navbar .navbar .el-submenu__title {
+  color: #fff;
+}
+.views-main-el-aside-navbar .navbar .el-icon-arrow-down:before {
+  color: #fff;
+}
+.views-main-el-aside-navbar .navbar .el-menu-item-group__title {
+  padding: 0 0 0 20px;
+}
+.views-main-el-aside-navbar .el-scrollbar__thumb {
+  background-color: #78cfa8 !important;
+}
+.views-main-el-aside-navbar .el-scrollbar__thumb:hover {
+  background-color: #c4ead9 !important;
+}
+.views-main-el-aside-navbar .replace_active {
+  background: #53c28f !important;
+}
+/*
+ * @Author: aFei
+ * @Date: 2018-12-19 17:48:16
+ */
+/*
+ * @LastEditors: aFei
+ * @LastEditTime: 2019-07-24 17:18:59
+ */
+.views-system-management-system-alarm .tab-content .green {
+  color: #349d6f;
+}
+.views-system-management-system-alarm .tab-content .yellow {
+  color: #ff8400;
+}
+.views-system-management-system-alarm .tab-content .red {
+  color: #f51031;
+}
+.views-system-management-system-setting .disk-title,
+.views-system-management-system-setting .log-title {
+  color: #5f5f5f;
+  font-size: 14px;
+}
+.views-system-management-system-setting .disk-title .el-input__icon,
+.views-system-management-system-setting .log-title .el-input__icon {
+  line-height: 30px;
+}
+.views-system-management-system-setting .disk-title .el-input__inner,
+.views-system-management-system-setting .log-title .el-input__inner {
+  width: 116px;
+}
+.views-system-management-system-setting .disk-title > button,
+.views-system-management-system-setting .log-title > button {
+  width: 70px;
+  height: 30px;
+  background: #f49900;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+.views-system-management-system-setting .disk-title > button:hover,
+.views-system-management-system-setting .log-title > button:hover {
+  background: #f48300;
+}
+.views-system-management-system-setting .quota-title {
+  display: flex;
+  justify-content: space-between;
+}
+.views-system-management-system-setting .quota-title .item {
+  border: 1px solid #dddddd;
+  height: 400px;
+  width: 234px;
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+.views-system-management-system-setting .quota-title .item.else {
+  width: 330px;
+}
+.views-system-management-system-setting .quota-title .item .item-top {
+  color: #323232;
+  font-size: 16px;
+}
+.views-system-management-system-setting .quota-title .item .content > p {
+  font-size: 14px;
+  color: #6c6c6c;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+.views-system-management-system-setting .quota-title .item .content .el-input__icon {
+  line-height: 30px;
+}
+.views-system-management-system-setting .quota-title .item .content .el-input .el-input__inner {
+  height: 30px !important;
+}
+.views-system-management-system-setting .quota-title .item .content .group {
+  margin-top: 30px;
+}
+.views-system-management-system-setting .quota-title .item .content .group > p {
+  font-size: 14px;
+  color: #323232;
+  margin-bottom: 10px;
+}
+.views-system-management-system-setting .quota-title .item .content .group .group-content {
+  display: flex;
+}
+.views-system-management-system-setting .quota-title .item .content .group .group-content .group-content-item {
+  width: 112px;
+}
+.views-system-management-system-setting .quota-title .item .content .group .group-content .group-content-item p {
+  font-size: 14px;
+  color: #6c6c6c;
+  margin-bottom: 5px;
+}
+.views-system-management-system-setting .quota-title .item .content .group .group-content .group-content-item .el-input {
+  width: 112px;
+}
+.views-system-management-system-setting .quota-title .item .content .group .group-content .group-content-item .el-input__inner {
+  width: 100%;
+}
+.views-system-management-system-setting .quota-title .item .content .group .group-content .group-content-item:first-child {
+  width: calc(-12%);
+}
+.views-system-management-system-setting .quota-title .item .content .group .group-content .group-content-item:first-child .el-input {
+  width: 130px;
+  margin-right: 10px;
+}
+.views-system-management-system-setting .quota-title .item .controls {
+  position: absolute;
+  bottom: 20px;
+  right: 16px;
+}
+.views-system-management-system-setting .quota-title .item .controls button {
+  width: 70px;
+  height: 30px;
+  background: #f49900;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+.views-system-management-system-setting .quota-title .item .controls button:hover {
+  background: #f48300;
+}
+.views-system-management-system-setting .quota-content {
+  border: 1px solid #dddddd;
+  padding: 16px;
+  margin-top: 20px;
+  position: relative;
+}
+.views-system-management-system-setting .quota-content > p {
+  font-size: 16px;
+  color: #323232;
+}
+.views-system-management-system-setting .quota-content > button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 70px;
+  height: 30px;
+  background: #f49900;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+.views-system-management-system-setting .quota-content > button a {
+  color: #ffffff;
+}
+.views-system-management-system-setting .quota-content > button:hover {
+  background: #f48300;
+}
+.views-system-management-system-setting .tab-content {
+  text-align: center;
+}
+.views-system-management-system-setting .tab-content .green {
+  color: #349d6f;
+}
+.views-system-management-system-setting .tab-content .yellow {
+  color: #ff8400;
+}
+.views-system-management-system-setting .tab-content .red {
+  color: #f51031;
+}
+.views-system-management-system-setting .tab-content .clear,
+.views-system-management-system-setting .tab-content .setResource {
+  background: none;
+  color: #417dd0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.views-system-management-system-setting .tab-content .projectName {
+  color: #f48400;
+}
+.views-system-management-system-setting .diskCleaningPop .el-dialog__header .el-dialog__headerbtn:focus .el-dialog__close,
+.views-system-management-system-setting .diskCleaningPop .el-dialog__header .el-dialog__headerbtn:hover .el-dialog__close {
+  color: #f48400;
+}
+.views-system-management-system-setting .diskCleaningPop .content {
+  font-size: 14px;
+}
+.views-system-management-system-setting .diskCleaningPop .content .el-input__icon {
+  line-height: 30px;
+}
+.views-system-management-system-setting .diskCleaningPop .content .el-date-editor.el-input,
+.views-system-management-system-setting .diskCleaningPop .content .el-date-editor.el-input__inner {
+  width: 160px;
+}
+.views-system-management-system-setting .diskCleaningPop .content .el-input__inner {
+  width: 140px;
+}
+.views-system-management-system-setting .diskCleaningPop .dialog-footer button.cancel:hover,
+.views-system-management-system-setting .diskCleaningPop .dialog-footer button.cancel:focus {
+  color: #f49900;
+  border-color: #f49900;
+}
+.views-system-management-system-setting .diskCleaningPop .dialog-footer button.primary {
+  background-color: #f49900;
+  border: none;
+}
+.views-system-management-system-setting .diskCleaningPop .dialog-footer button.primary:hover {
+  background-color: #f48300;
+}
+.views-system-management-system-setting .setResourcePop .el-dialog__header .el-dialog__headerbtn:focus .el-dialog__close,
+.views-system-management-system-setting .setResourcePop .el-dialog__header .el-dialog__headerbtn:hover .el-dialog__close {
+  color: #f48400;
+}
+.views-system-management-system-setting .setResourcePop .el-dialog__body {
+  padding: 10px 20px;
+}
+.views-system-management-system-setting .setResourcePop .tab-content {
+  margin: 0;
+}
+.views-system-management-system-setting .setResourcePop .tab-content .el-radio__inner:hover {
+  border-color: #f49900;
+}
+.views-system-management-system-setting .setResourcePop .tab-content .el-radio__input.is-checked .el-radio__inner {
+  border-color: #f49900;
+  background: #f49900;
+}
+.views-system-management-system-setting .setResourcePop .dialog-footer button.cancel:hover,
+.views-system-management-system-setting .setResourcePop .dialog-footer button.cancel:focus {
+  color: #f49900;
+  border-color: #f49900;
+}
+.views-system-management-system-setting .setResourcePop .dialog-footer button.primary {
+  background-color: #f49900;
+  border: none;
+}
+.views-system-management-system-setting .setResourcePop .dialog-footer button.primary:hover {
+  background-color: #f48300;
+}
+.views-system-management-quota-management > button {
+  width: 70px;
+  height: 30px;
+  background: #f49900;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+.views-system-management-quota-management > button:hover {
+  background: #f48300;
+}
+.views-system-management-quota-management .tab-content .delete,
+.views-system-management-quota-management .tab-content .change {
+  background: none;
+  color: #417dd0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.views-system-management-quota-management .changeQuotaPop .el-dialog__header .el-dialog__headerbtn:focus .el-dialog__close,
+.views-system-management-quota-management .changeQuotaPop .el-dialog__header .el-dialog__headerbtn:hover .el-dialog__close {
+  color: #f48400;
+}
+.views-system-management-quota-management .changeQuotaPop .form-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+.views-system-management-quota-management .changeQuotaPop .form-item .form-left {
+  width: 85px;
+  text-align: right;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.views-system-management-quota-management .changeQuotaPop .form-item .form-right {
+  position: relative;
+}
+.views-system-management-quota-management .changeQuotaPop .form-item .form-right .el-input {
+  width: 256px;
+  margin-right: 10px;
+}
+.views-system-management-quota-management .changeQuotaPop .form-item .form-right .el-input__inner {
+  width: 100%;
+}
+.views-system-management-quota-management .changeQuotaPop .form-item .form-right .prompt {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  font-size: 12px;
+  color: #5f5f5f;
+}
+.views-system-management-quota-management .changeQuotaPop .dialog-footer button.cancel:hover,
+.views-system-management-quota-management .changeQuotaPop .dialog-footer button.cancel:focus {
+  color: #f49900;
+  border-color: #f49900;
+}
+.views-system-management-quota-management .changeQuotaPop .dialog-footer button.primary {
+  background-color: #f49900;
+  border: none;
+}
+.views-system-management-quota-management .changeQuotaPop .dialog-footer button.primary:hover {
+  background-color: #f48300;
+}
+/*
+ * @Author: Liang Liang
+ * @Date: 2018-12-12 11:25:09
+ * @LastEditors: Liang Liang
+ * @LastEditTime: 2019-07-12 14:32:54
+ * @Description: 
+ */
+.components-path-breadcrumb {
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+}
+.components-path-breadcrumb small {
+  font-size: 0.72916667vw;
+  color: #666;
+}
+.components-path-breadcrumb a,
+.components-path-breadcrumb i {
+  max-width: 5.20833333vw;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+.components-path-breadcrumb .el-icon-arrow-right {
+  margin: 0 5px 0 0;
+}
+/*
+ * @Author: Liang Liang
+ * @Date: 2018-12-12 11:25:09
+ * @LastEditors: Liang Liang
+ * @LastEditTime: 2019-07-12 14:32:54
+ * @Description: 
+ */
+/*
+ * @LastEditors: aFei
+ * @LastEditTime: 2019-07-23 17:27:05
+ */
+.el-menu.else.el-menu--horizontal li {
+  width: auto;
+}
+.el-menu.else li {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+.el-menu.else li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding-left: 20px;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+}
+.el-menu.else .el-submenu .el-menu .el-menu-item {
+  position: relative;
+}
+.el-menu.else .el-submenu .el-menu .el-menu-item a {
+  padding-left: 40px;
+}
+.el-menu.else .el-menu-item-group.else .el-menu-item {
+  padding: 0 !important;
+}
+.el-menu.else .el-menu-item-group.else .el-menu-item a {
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+/*
+ * @Author:任雷雷
+ * @Date: 2018-12-12 10:04:31
+ * @LastEditors: Liang Liang
+ * @LastEditTime: 2019-07-24 17:48:12
+ * @Description:项目空间的样式表
+ */
+a {
+  text-decoration: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+li {
+  display: block;
+  margin: 0;
+}
+.input-text {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+}
+.input-btn {
+  height: 30px;
+  padding: 5px 20px;
+  border: 1px solid #f49900;
+  background: #feebcb;
+}
+.views-project-space {
+  padding: 0 10px;
+  font-size: 14px;
+}
+.views-input-box {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.views-input-box .el-input__icon {
+  line-height: 0;
+  color: #c9c9c9;
+}
+.views-input-box .el-date-editor .el-range-separator {
+  height: auto;
+}
+.views-margin {
+  margin-left: 20px;
+}
+.el-input__inner {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+}
+.views-date .el-input__icon {
+  line-height: 0;
+  color: #c9c9c9;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.views-input-text {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+}
+.views-button {
+  height: 30px;
+  padding: 5px 20px;
+  border: 1px solid #f49900;
+  background: #feebcb;
+  color: #f7bc6e;
+}
+.views-margin-btn {
+  margin-left: 30px;
+}
+.views-table-btn {
+  margin-bottom: 20px;
+}
+.views-table-btn .views-button {
+  background: #f49900;
+  color: #fff;
+  font-size: 16px;
+}
+.views-table-content {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.views-table-content .el-table td,
+.views-table-content .el-table th.is-leaf {
+  border-bottom: 1px solid #c9c9c9;
+}
+.views-table-content .el-table--border td,
+.views-table-content .el-table--border th,
+.views-table-content .el-table__body-wrapper .el-table--border.is-scrolling-left ~ .el-table__fixed {
+  border-right: 1px solid #c9c9c9;
+}
+.views-table-content .el-table--border,
+.views-table-content .el-table--group {
+  border: 1px solid #c9c9c9;
+}
+.views-table-content .table-header th {
+  background: #f49900;
+  color: #fff;
+  font-size: 16px;
+}
+.views-table-content .el-checkbox__inner {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cbcbcb;
+}
+.views-table-content .el-checkbox__inner::after {
+  left: 6px;
+  top: 3px;
+}
+.views-table-content .el-checkbox__input.is-checked .el-checkbox__inner,
+.views-table-content .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #f46200;
+  border-color: #f46200;
+}
+.views-table-content .el-table .cell a {
+  display: block;
+}
+.views-table-link {
+  color: #f49900;
+  cursor: pointer;
+}
+.views-box {
+  margin-bottom: 20px;
+}
+.views-table-span {
+  color: #5287d3;
+  cursor: pointer;
+}
+.views-table-margin {
+  margin-right: 10px;
+}
+.views-text-name {
+  width: 100px;
+  display: inline-block;
+}
+.views-develop {
+  overflow: hidden;
+  margin-top: 20px;
+}
+.views-develop li {
+  float: left;
+  margin-left: 5px;
+}
+.views-develop li a {
+  margin-right: 5px;
+  color: #c9c9c9;
+}
+.views-develop li .develop-link {
+  color: blue;
+}
+.views-page {
+  text-align: center;
+  margin-top: 30px;
+}
+.views-page .el-pager li.active {
+  color: #f49900;
+  cursor: default;
+}
+.table-td {
+  width: 200px;
+  background: #e5e5e5;
+  padding-right: 20px;
+}
+.views-project-details {
+  width: calc(80%);
+  border: 1px solid #c9c9c9;
+  margin: 30px 10px 0 10px;
+}
+.views-project-details tr {
+  border-bottom: 1px solid #c9c9c9;
+}
+.views-project-details tr td {
+  border-left: 1px solid #c9c9c9;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+}
+.views-project-details tr td:first-child {
+  width: 200px;
+  background: #e5e5e5;
+  padding-right: 20px;
+}
+.views-project-details tr td:nth-child(3) {
+  width: 200px;
+  background: #e5e5e5;
+  padding-right: 20px;
+}
+.views-table-margin {
+  margin-left: 10px;
+}
+.views-development {
+  width: calc(80%);
+  margin: 0 10px;
+  font-size: 14px;
+}
+.views-development .el-menu--horizontal > .el-menu-item.is-active {
+  border-bottom: 3px solid #f49900;
+  color: #c9c9c9;
+}
+.views-development li a {
+  display: block;
+}
+/*
+ * @Author:任雷雷
+ * @Date: 2018-12-12 10:04:31
+ * @LastEditors: Liang Liang
+ * @LastEditTime: 2019-07-24 17:47:04
+ * @Description:项目空间的样式表
+ */
+h1 {
+  color: red;
+}
+.views-project-details {
+  background: red;
+}
+.views-text-name {
+  width: 225px;
+  text-align: right;
+}

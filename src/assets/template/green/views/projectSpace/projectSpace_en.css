@@ -1,0 +1,14 @@
+/*
+ * @Author:任雷雷
+ * @Date: 2018-12-12 10:04:31
+ * @LastEditors: Liang Liang
+ * @LastEditTime: 2019-07-24 17:47:04
+ * @Description:项目空间的样式表
+ */
+.en .views-project-details {
+  background: red;
+}
+.en .views-text-name {
+  width: 225px;
+  text-align: right;
+}
